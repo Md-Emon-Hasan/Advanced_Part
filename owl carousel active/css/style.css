@@ -1,0 +1,32 @@
+
+.slider{
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.slider .owl-item.active.center .slider-card{
+	transform: scale(1.15);
+	opacity: 1;
+	background: #ccc;
+}
+
+.slider .owl-item .slider-card{
+	background: indigo;
+	margin: 50px 15px 90px 15px;
+	border-radius: 5px;
+	box-shadow: 0 0 15px 5px black;
+	transform: scale(0.8);
+	opacity: 0.5;
+	transition: all 0.3s;
+}
+
+.image-area{
+	height: 300px;
+	width: 100%;
+}
+
+.image-area img{
+	height: 100%;
+	width: 100%;
+	border-radius: 5px;
+}

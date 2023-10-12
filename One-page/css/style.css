@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content{
+    color: #000000;
+    margin-top: 6%;
+    margin-left: 9%;
+    align-items: center;
+    justify-content: center;
+}
+
+.content p{
+    max-width: 500px;
+    line-height: 28px;
+}
+
+.slide-left{
+    animation: slideleft 2s linear forwards;
+}
+
+/* add animation css */
+@keyframes slideleft{
+    0%{
+        transform: translate(100px);
+        opacity: 0;
+    }
+   100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(54, 54, 146, 0.815),rgba(54, 54, 146, 0.815)),url(images/back.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+nav span{
+    color: #fff;
+    font-weight: 600;
+    font-size:25px;
+    margin-left: 6px;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 8%;
+    transition: background .4s;
+}
+nav:hover{
+    background: #fff;
+}
+nav:hover .navbar-nav li a{
+    color: #333!important;
+}
+nav:hover span{
+    color: #333;
+}
+nav .logo{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: 600;
+}
+nav .logo img{
+    width: 80px;
+    margin-right: 10px;
+}
+.navbar-nav,button{
+    margin-top: 20px;
+}
+ 
+.navbar-light .navbar-toggler {
+    color: rgb(15, 15, 15);
+    border-color: rgb(255, 251, 251);
+}
+.navbar-nav li a{
+    color: #fff !important;
+}
+.navbar-toggler{
+    background-color: rgba(128, 123, 117, 0.788);
+}
+ .nav-link{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+/* nav:hover{
+    background: #fff;
+} */
+
+.content{
+    color: #fff;
+    margin-top: 6%;
+    margin-left: 9%;
+    align-items: center;
+    justify-content: center;
+}
+.content h1{
+    font-size: 100px;
+    line-height: 130px;
+    font-weight: 600;
+}
+.content p{
+    max-width: 500px;
+    line-height: 28px;
+}
+.links{
+    margin-top: 30px;
+}
+.links a{
+    text-decoration: none;
+    color: #fff;
+}
+.btn{
+    background: #2193b0;
+    color: #333;
+    outline: none;
+    border: 1px solid #fff;
+    padding: 10px 35px;
+    border-radius: 30px;
+    margin-right: 15px;
+    transition: all .6s;
+}
+.btn:hover{
+    background: none;
+    color: #fff;
+}
+.slide-left{
+    animation: slideleft 2s linear forwards;
+}
+/*=======ANIMATION===========*/
+@keyframes slideleft{
+    0%{
+        transform: translate(100px);
+        opacity: 0;
+    }
+   100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}

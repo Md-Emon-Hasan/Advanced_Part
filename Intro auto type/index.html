@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro auto type</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-area">
+            <img src="image/1.jpg" alt="">
+        </div>
+        <div class="wrapper">
+            <div class="myself">
+                <div class="hello">
+                    <p>Hello Everyone ! </p>
+                    <h4>I'm <span class="name">Md Emon Hasan</span> </h4>
+                    <h2>I'm <span class="auto-typed"></span></h2>
+                </div>
+            </div>
+         </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> 
+<script>
+    var typed = new Typed(".auto-typed", {
+        strings:["Programmer", "A Student", 'Data Scientist'],
+        typeSpeed:150,
+        backSpeed:150,
+        loop:true,
+    });
+</script>     
+</body>
+</html>

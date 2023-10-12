@@ -1,0 +1,33 @@
+h1{
+  text-align: center;
+}
+
+.box{
+    position: relative;
+    z-index: 999;
+    margin: 0 auto;
+    height: 200px;
+    width: 600px;
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+}
+
+.box1{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-image: linear-gradient(to left, red,orange,yellow,green,blue,indigo,violet);
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+
+.box:hover .box1{
+    opacity: 1;
+}

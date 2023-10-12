@@ -1,0 +1,18 @@
+
+.box{
+	margin: 98px;
+}
+
+.first-row{
+	margin-bottom: 25px;
+}
+
+.image-area{
+	height: 210px;
+	width: 100%;
+}
+
+.image-area img{
+	height: 100%;
+	width: 100%;
+}

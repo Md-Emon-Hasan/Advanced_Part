@@ -1,0 +1,34 @@
+.accordion-button:after{
+    font-family: "Font Awesome 5 Free";
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    color: #000;
+    content: "\f146";
+}
+
+.accordion-button.collapsed:after{
+    font-family: "Font Awesome 5 Free";
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    color: #000;
+    content: "\f0fe";
+}
+
+.accordion-button::after {
+    background-image: none;
+}
+
+/** after click **/
+
+.accordion-button:not(.collapsed)::after {
+    background-image: none;
+    transform: none;
+}
+
+.accordion-button::after {
+    background-image: none;
+}
+
+

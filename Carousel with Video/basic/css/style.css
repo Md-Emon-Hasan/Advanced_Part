@@ -1,0 +1,70 @@
+body{
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Macondo&display=swap');
+    font-family: 'Fira Code', monospace;
+    font-family: 'Macondo', cursive;
+    height: 100vh;
+    width: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+video{
+    position: fixed;
+    z-index: -1;
+}
+
+p{
+    color: aliceblue;
+    text-align: justify;
+    padding: 1rem;
+}
+
+.overlay{
+    position: fixed;
+    height: 100%;
+    width: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+    background-image: linear-gradient(to right, rgba(191, 0, 255, 0.2), rgba(191, 0, 255, 0.2));
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .carousel{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .carousel{
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media (min-aspect-ratio: 16/9) {
+    video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    video{
+        width: auto;
+        height: 100%;
+    }
+}
